@@ -34,4 +34,4 @@ A high-performance, modern Task Management application built using **Angular 19*
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/angular-signal-task-manager.git](https://github.com/YOUR_USERNAME/angular-signal-task-manager.git)
+   git clone git clone [https://github.com/mmatliThato/TaskList-Signal.git](https://github.com/mmatliThato/TaskList-Signal.git)
