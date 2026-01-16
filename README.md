@@ -1,59 +1,37 @@
-# MyAppSignal
+# ⚡ Angular 19 Signal Task Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+A high-performance, modern Task Management application built using **Angular 19**. This project focuses on the latest "Signal-first" reactive patterns, avoiding the complexity of Zone.js and RxJS for simple state management.
 
-## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## 🚀 Key Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Signal State Management**: Utilizes `signal()` for the core state, ensuring fine-grained updates and better performance.
+* **Derived State**: Uses `computed()` to automatically track and update task statistics (e.g., completed count).
+* **Modern Control Flow**: Implements the new `@for` and `@empty` syntax for cleaner, more efficient templates.
+* **Professional UI**: A fully responsive, card-based design with interactive hover states and transitions.
+* **CRUD Operations**: Full support for Adding, Toggling (Complete/Undo), and Deleting tasks.
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Framework**: [Angular 19](https://angular.dev/)
+* **Language**: TypeScript
+* **Styling**: Modern CSS (Flexbox, custom properties)
+* **Build Tool**: Vite/esbuild (Angular 19 Default)
 
-```bash
-ng generate component component-name
-```
+## 📂 Project Structure
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* `src/app/task.service.ts`: The central "Store" using Signals to manage global application state.
+* `src/app/app.component.ts`: The logic layer utilizing `inject()` and local component signals.
+* `src/app/task.model.ts`: Interface definitions for Type Safety.
 
-```bash
-ng generate --help
-```
+## 🏁 Getting Started
 
-## Building
+### Prerequisites
+* Node.js (v18.19.0+)
+* Angular CLI (`npm install -g @angular/cli`)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/angular-signal-task-manager.git](https://github.com/YOUR_USERNAME/angular-signal-task-manager.git)
